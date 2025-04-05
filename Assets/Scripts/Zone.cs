@@ -6,7 +6,11 @@ public class Zone : MonoBehaviour
 
     private void Awake()
     {
-        //_workerSpawner.Spawned += ;
+        _workerSpawner.Spawned += WorkerOnSpawned;
     }
 
+    private void WorkerOnSpawned(GameObject obj)
+    {
+        
+    }
 }

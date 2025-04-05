@@ -199,8 +199,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Number>k__BackingField: 0
-  <MaxGuest>k__BackingField: 0
+  <MaxGuest>k__BackingField: 2
   <SittingGuest>k__BackingField: 0
+  _chairOne: {fileID: 5969817497014543004}
+  _chairTwo: {fileID: 5075643541173492436}
+  _chairForSittingOne: {fileID: 2226208292239143331}
+  _chairForSittingTwo: {fileID: 4604718521450343519}
 --- !u!1 &4604718521450343519
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +388,12 @@ PrefabInstance:
 --- !u!4 &5075643541173126900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5655441781520710840, guid: 7ddbd6f40ac92d442b02e69682b47879,
+    type: 3}
+  m_PrefabInstance: {fileID: 579949221467191884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5075643541173492436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5655441781520998552, guid: 7ddbd6f40ac92d442b02e69682b47879,
     type: 3}
   m_PrefabInstance: {fileID: 579949221467191884}
   m_PrefabAsset: {fileID: 0}
@@ -611,6 +621,12 @@ PrefabInstance:
 --- !u!4 &5969817497014189756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5655441781520710840, guid: 7ddbd6f40ac92d442b02e69682b47879,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064099110390104580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5969817497014543004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5655441781520998552, guid: 7ddbd6f40ac92d442b02e69682b47879,
     type: 3}
   m_PrefabInstance: {fileID: 2064099110390104580}
   m_PrefabAsset: {fileID: 0}

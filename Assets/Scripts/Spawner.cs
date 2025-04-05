@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
     public void Spawn()
         => Spawned?.Invoke(_pool.Get());
 
-    public T[] GetTo<T>() where T : MonoBehaviour
+    public T[] GetsTo<T>() where T : MonoBehaviour
         => _pool.Active.Select(o => o.GetComponent<T>()).ToArray();
 
     public T GetFirstTo<T>()
@@ -46,15 +46,16 @@ public class Spawner : MonoBehaviour
 
     private void ReturnAction(GameObject obj)
     {
-        obj.gameObject.SetActive(false);
+        obj.SetActive(false);
     }
 
     private void GetAction(GameObject obj)
     {
-        obj.gameObject.SetActive(true);
-        obj.transform.position = transform.position + _offset;
+        obj.SetActive(true);
     }
 
-    private GameObject PreloadFunc()
-        => Instantiate(_object);
+    private GameObject PreloadFunc() => Instantiate(_object, transform.position + _offset, Quaternion.identity);
+
+    public void ForceReturn(GameObject obj) 
+        => _pool.Return(obj);
 }
