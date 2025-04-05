@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Table : WorkPlace
 {
-    [field: SerializeField] private  int _number;
-    [field: SerializeField] private  int _maxGuest = 2;
-    [field: SerializeField] private  int _sittingGuest;
+    [field: SerializeField] public int Number { get; private set; }
+    [field: SerializeField] private int _maxGuest = 2;
+    [field: SerializeField] private int _sittingGuest;
 
     [SerializeField] private GameObject _chairOne;
     [SerializeField] private GameObject _chairTwo;

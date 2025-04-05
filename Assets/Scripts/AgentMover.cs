@@ -16,6 +16,7 @@ public class AgentMover : MonoBehaviour
     private void Awake()
     {
         Agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
