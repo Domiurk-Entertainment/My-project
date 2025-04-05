@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba79a32a7c354f97bb3a8ef3ace9373f, type: 3}
+  m_Name: Soup
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: Soup
+  <Icon>k__BackingField: {fileID: 21300000, guid: d5cca532045d9fa41b7156a11f35bd5b,
+    type: 3}
+  <TimeCooking>k__BackingField: 4
+  <Cost>k__BackingField: 12
+  <CraftingItems>k__BackingField: []
+  <LevelNeeded>k__BackingField: 0
